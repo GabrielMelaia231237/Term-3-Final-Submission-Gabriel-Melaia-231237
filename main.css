@@ -2,6 +2,8 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #6a5acd;
+
 }
 header {
   background: linear-gradient(to bottom, #b207dd80, #19057465);
@@ -145,8 +147,9 @@ nav a {
 }
 
 .cruise-card {
-  background-color: #fff;
-  border: 1px solid #ccc;
+  background-color: #a17fc2;
+  color: #070011;
+  border: 2px solid #640554;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -266,4 +269,91 @@ select option {
 .myheading{
   text-align: center;
   background-color: #19057465;
+}
+
+.filter-container {
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+select {
+  padding: 5px;
+  font-size: 14px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+  margin: 0;
+}
+
+.contact-container {
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-accordion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; 
+}
+
+.contact-accordion-item {
+  text-align: center;
+}
+
+.contact-accordion-checkbox {
+  display: none; 
+}
+
+.contact-accordion-title {
+  cursor: pointer;
+  background-color: #3f2ac4;
+  color: #fff; 
+  padding: 10px 20px;
+  border-radius: 5px;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 5px;
+  font-weight: 100;
+}
+
+.contact-accordion-content {
+  display: none;
+  background-color: #a050eb; 
+  color: #1b071a; 
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 100;
+}
+
+.contact-accordion-checkbox:checked + .contact-accordion-title + .contact-accordion-content {
+  display: block; 
+}
+
+.contact-footer {
+  background-color: #333; 
+  color: #fff; 
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+}
+
+.contact-cruise,
+.contact-contact,
+.contact-safety {
+    max-width: 400px; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
 }

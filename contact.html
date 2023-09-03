@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-    <link rel="stylesheet" href="main.css">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us Page</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
-
     <header>
-    
         <div>
           <img src="assets/saillogo.jpg" alt="" class="logoimage">
         </div>
@@ -19,7 +17,44 @@
           <a href="index.html">Services</a>
           <a href="index.html">Contact</a>
         </nav>
-      </header>
+    </header>
+
+    <br>
+    <br>
+
+    <div class="contact-container">
+        <div class="contact-accordion">
+            <div class="contact-accordion-item">
+                <img src="assets/boatone.jpg" class="contact-cruise">
+                <input type="checkbox" id="contact-acc-item-1" class="contact-accordion-checkbox">
+                <label class="contact-accordion-title" for="contact-acc-item-1">What we do</label>
+                <div class="contact-accordion-content">
+                    <p>We offer a wide variety of cruises different from any other service imaginable.</p>
+                </div>
+            </div>
+            <div class="contact-accordion-item">
+                <img src="assets/boattwo.jpg" class="contact-contact">
+                <input type="checkbox" id="contact-acc-item-2" class="contact-accordion-checkbox">
+                <label class="contact-accordion-title" for="contact-acc-item-2">How to contact us</label>
+                <div class="contact-accordion-content">
+                    <p>Feel free to contact us through our email, our contact number or arrive at our address</p>
+                </div>
+            </div>
+            <div class="contact-accordion-item">
+                <img src="assets/boatthree.jpg" class="contact-safety">
+                <input type="checkbox" id="contact-acc-item-3" class="contact-accordion-checkbox">
+                <label class="contact-accordion-title" for="contact-acc-item-3">Safety</label>
+                <div class="contact-accordion-content">
+                    <p>We guarantee safety with all of our cruise ships; your safety is of our utmost importance.</p>
+                </div>
+            </div>
+        </div>
     
+        <div class="contact-footer">
+            <p>Email: sailselect@select.co.za</p>
+            <p>Phone: 082 232 3243</p>
+            <p>Address: 45 Pioneer Street, Cape Town</p>
+        </div>
+    </div>
 </body>
 </html>

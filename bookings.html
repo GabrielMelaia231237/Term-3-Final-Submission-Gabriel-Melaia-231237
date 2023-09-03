@@ -24,76 +24,97 @@
     <br>
     <br>
     <br>
-    <br>
-    <br>
-    <br>
-    <br>
 
-    <section id="filter">
-        <label for="price-filter">Sort by Price:</label>
-        <select id="price-filter">
-            <option value="low-to-high">Low to High</option>
-            <option value="high-to-low">High to Low</option>
+    <div class="filter-container">
+        <label for="destinationFilter">Filter by:</label>
+        <select id="destinationFilter">
+            <option value="all">All destinations</option>
+            <option value="short">Short Duration Trips</option>
+            <option value="long">Long Duration Trips</option>
+            <option value="single">Single Destination</option>
+            <option value="multi">Multi Destinations</option>
+            <option value="round">Round Trips</option>
+            <option value="cheap">Row Boat Special</option>
         </select>
-    
-        <label for="duration-filter">Filter by Duration:</label>
-        <select id="duration-filter">
-            <option value="all">All Durations</option>
-            <option value="short">5 Days or Less</option>
-            <option value="long">More than 5 Days</option>
-        </select>
-    
-        <label for="destination-filter">Filter by Destination:</label>
-        <select id="destination-filter">
-            <option value="all">All Destinations</option>
-            <option value="Maldives">Maldives</option>
-            <option value="Los Angeles">Los Angeles</option>
-            <option value="Cape Town">Cape Town</option>
-            <option value="Tokyo">Tokyo</option>
-        </select>
-    </section>
-    
-    <section id="cruise-list">
-        <div class="cruise-container">
-            <!-- Cruise Card 1 -->
-            <div class="cruise-card" data-duration="short" data-destination="Cape Town" data-price="7500">
-                <img src="assets/maldives.png" alt="Cruise 1">
-                <h2>Maldives</h2>
-                <p>Destination: Maldives to Cape Town</p>
-                <p>Price: R5000</p>
-                <div class="button-container">
-                    <button class="book-button">Book Now</button>
-                    <button class="info-button">Info</button>
-                    <div class="info-card" style="display: none;">
-                        <p>Destination: Maldives</p>
-                        <p>Weather: Sunny</p>
-                        <p>Trip Duration: 4 days</p>
-                        <p>Weather: </p>
-                    </div>
-                </div>
-            </div>
-    
-            <!-- Cruise Card 2 -->
-            <div class="cruise-card" data-duration="long" data-destination="Los Angeles" data-price="7000">
-                <img src="assets/borabora.jpg" alt="Cruise 2">
-                <h2>Los Angeles</h2>
-                <p>Destination: Los Angeles to Caribbean</p>
-                <p>Price: R7000</p>
-                <div class="button-container">
-                    <button class="book-button">Book Now</button>
-                    <button class="info-button">Info</button>
-                    <div class="info-card" style="display: none;">
-                        <p>Destination: Los Angeles</p>
-                        <p>Weather: Sunny</p>
-                        <p>Trip Duration: 5 days</p>
-                    </div>
-                </div>
-            </div>
-    
-            <!-- Add more cruise cards here with appropriate data attributes -->
-            
-        </div>
-    </section>
+    </div>
+
+    <!-- Cruise cards -->
+<div class="cruise-card" data-duration="short" data-destination="City A" data-price="500">
+    <img src="assets/city_a.jp" alt="City A Cruise">
+    <h2>Cape Town</h2>
+    <p>Destination: Cape Town</p>
+    <p>Duration: 4 days</p>
+    <p>Price: R5000</p>
+    <button class="info-button">Info</button>
+    <div class="info-card" style="display: none;">
+    </div>
+</div>
+
+<div class="cruise-card" data-duration="long" data-destination="Island Paradise" data-price="800">
+    <img src="assets/island_paradise.jpg" alt="Island Paradise Cruise">
+    <h2>New York City</h2>
+    <p>Destination: New York City</p>
+    <p>Duration: 12 days</p>
+    <p>Price: R8000</p>
+    <button class="info-button">Info</button>
+    <div class="info-card" style="display: none;">
+    </div>
+</div>
+
+<div class="cruise-card" data-duration="single" data-destination="Mountain Retreat" data-price="400">
+    <img src="assets/mountain_retreat.jpg" alt="Mountain Retreat Cruise">
+    <h2>Paris</h2>
+    <p>Destination: Paris</p>
+    <p>Duration: 4 days</p>
+    <p>Price: R4000</p>
+    <button class="info-button">Info</button>
+    <div class="info-card" style="display: none;">
+    </div>
+</div>
+
+<div class="cruise-card" data-duration="multi" data-destination="City X, City Y, City Z" data-price="1200">
+    <img src="assets/city_xyz.jpg">
+    <h2>Tokyo, Sydney, Rio de Janeiro</h2>
+    <p>Destinations: Tokyo, Sydney, Rio de Janeiro</p>
+    <p>Duration: 10 days</p>
+    <p>Price: R12000</p>
+    <button class="info-button">Info</button>
+    <div class="info-card" style="display: none;">
+    </div>
+</div>
+
+<div class="cruise-card" data-duration="round" data-destination="Coastal Adventure" data-price="450">
+    <img src="assets/coastal_adventure.jpg" alt="Coastal Adventure Cruise">
+    <h2>Moscow</h2>
+    <p>Destination: Moscow Russia</p>
+    <p>Duration: 5 days</p>
+    <p>Price: R4500</p>
+    <button class="info-button">Info</button>
+    <div class="info-card" style="display: none;">
+    </div>
+</div>
+
+<div class="cruise-card" data-duration="short" data-destination="Lake Getaway" data-price="300">
+    <img src="assets/lake_getaway.jpg" alt="Lake Getaway Cruise">
+    <h2>Rome</h2>
+    <p>Destination: Rome, Italy</p>
+    <p>Duration: 4 days</p>
+    <p>Price: R3000</p>
+    <button class="info-button">Info</button>
+    <div class="info-card" style="display: none;">
+    </div>
+</div>
+
+<div class="cruise-card" data-duration="short" data-destination="River Adventure" data-price="320">
+    <img src="assets/river_adventure.jpg" alt="River Adventure Cruise">
+    <h2>Cancun</h2>
+    <p>Destination: Cancun Mexico</p>
+    <p>Duration: 4 days</p>
+    <p>Price: R3200</p>
+    <button class="info-button">Info</button>
+    <div class="info-card" style="display: none;">
+    </div>
+</div>
     
 
     <script src="main.js"></script>
