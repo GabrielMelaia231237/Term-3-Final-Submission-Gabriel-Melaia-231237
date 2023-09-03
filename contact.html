@@ -5,41 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us Page</title>
     <link rel="stylesheet" href="main.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-    <header>
-        <div>
-          <img src="assets/saillogo.jpg" alt="" class="logoimage">
-        </div>
-        <nav>
-          <a href="index.html">Home</a>
-          <a href="index.html">About</a>
-          <a href="index.html">Services</a>
-          <a href="index.html">Contact</a>
-        </nav>
+      <header>
+          <div>
+            <img src="assets/saillogo.jpg" alt="" class="logoimage">
+                </div>
+                <nav>
+                  <a href="index.html">Home</a>
+                    <a href="browse.html">About</a>
+                      <a href="bookings.html">Services</a>
+                        <a href="contact.html">Contact</a>
+                </nav>
     </header>
 
+    <h1 class="myheading" id="myHeading">Welcome To Sail Select</h1>
+
+
+  <script>
+    $(document).ready(function () {
+        $('#myHeading').text('Welcome to our Contact Page, Feel free to message us :)');
+    });
+</script>
+
     <br>
-    <br>
+      <br>
 
     <div class="contact-container">
         <div class="contact-accordion">
             <div class="contact-accordion-item">
                 <img src="assets/boatone.jpg" class="contact-cruise">
-                <input type="checkbox" id="contact-acc-item-1" class="contact-accordion-checkbox">
-                <label class="contact-accordion-title" for="contact-acc-item-1">What we do</label>
-                <div class="contact-accordion-content">
+                      <input type="checkbox" id="contact-acc-item-1" class="contact-accordion-checkbox">
+                        <label class="contact-accordion-title" for="contact-acc-item-1">What we do</label>
+                      <div class="contact-accordion-content">
                     <p>We offer a wide variety of cruises different from any other service imaginable.</p>
                 </div>
             </div>
+
+
             <div class="contact-accordion-item">
-                <img src="assets/boattwo.jpg" class="contact-contact">
-                <input type="checkbox" id="contact-acc-item-2" class="contact-accordion-checkbox">
-                <label class="contact-accordion-title" for="contact-acc-item-2">How to contact us</label>
-                <div class="contact-accordion-content">
+                  <img src="assets/boattwo.jpg" class="contact-contact">
+                      <input type="checkbox" id="contact-acc-item-2" class="contact-accordion-checkbox">
+                        <label class="contact-accordion-title" for="contact-acc-item-2">How to contact us</label>
+                    <div class="contact-accordion-content">
                     <p>Feel free to contact us through our email, our contact number or arrive at our address</p>
                 </div>
             </div>
+
+
             <div class="contact-accordion-item">
                 <img src="assets/boatthree.jpg" class="contact-safety">
                 <input type="checkbox" id="contact-acc-item-3" class="contact-accordion-checkbox">
@@ -49,12 +64,16 @@
                 </div>
             </div>
         </div>
+
+
     
-        <div class="contact-footer">
-            <p>Email: sailselect@select.co.za</p>
-            <p>Phone: 082 232 3243</p>
-            <p>Address: 45 Pioneer Street, Cape Town</p>
+          <div class="contact-footer">
+                <p>Email: sailselect@select.co.za</p>
+                  <p>Phone: 082 232 3243</p>
+                <p>Address: 45 Pioneer Street, Cape Town</p>
+            </div>
         </div>
-    </div>
+
+    <script src="main.js"></script>
 </body>
 </html>

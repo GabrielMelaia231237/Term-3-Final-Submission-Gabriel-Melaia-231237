@@ -64,3 +64,4 @@ document.getElementById('destinationFilter').addEventListener('change', function
         }
     });
 });
+
